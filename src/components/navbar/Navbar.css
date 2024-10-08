@@ -1,0 +1,3 @@
+li{
+    @apply hover:bg-gradient-to-r hover:from-pink-600 hover:to-purple-600 hover:text-transparent hover:bg-clip-text cursor-pointer;
+}
