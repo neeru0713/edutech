@@ -15,10 +15,10 @@ const Navbar = () => {
           <li>Contact sections</li>
         </div>
         <div className="btn flex flex-col md:flex-row text-left gap-5 cursor-pointer w-[30%] md:w-full">
-          <button className="border rounded-md px-4 py-2 font-semibold hover:bg-[#f7f7fc] ">
+          <button className="border rounded-md px-4 py-2 font-semibold hover:bg-[#f7f7fc] w-[5rem]">
             Log in
           </button>
-          <button className="border rounded-md px-4 py-2 font-semibold bg-[#5845ee] text-white hover:bg-[#382ca5]">
+          <button className="border rounded-md px-4 py-2 font-semibold bg-[#5845ee] text-white hover:bg-[#382ca5] w-[6rem]">
             Register
           </button>
         </div>
