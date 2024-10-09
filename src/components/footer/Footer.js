@@ -12,13 +12,13 @@ export const Footer = () => {
       <div className="w-full h-[500px] md:h-[200px] bg-[#5845ee] pt-16 flex flex-col px-[20%]">
         <div className="flex items-center">
           <div className="font-semibold text-4xl text-white">EduTech+</div>
-          <ul className="pl-[34%] flex flex-col md:flex-row text-white font-semibold gap-6">
+          <ul className="pl-[25%] flex flex-col md:flex-row text-white font-semibold gap-4">
             <li>Home</li>
             <li>About</li>
             <li>Courses</li>
             <li>Contact sections</li>
-            <li>Terms</li>
-            <li>Privacy</li>
+            <li>Terms of service</li>
+            <li>Privacy policy</li>
           </ul>
         </div>
 
@@ -27,7 +27,7 @@ export const Footer = () => {
       <div className="w-full flex flex-col items-center justify-center relative">
         <hr className="absolute h-1 w-[80%] bottom-12" />
       </div>
-      <ul className="flex gap-2 items-center absolute bottom-4 md:bottom-3 pt-2 right-[12%]">
+      <ul className="flex gap-2 items-center absolute bottom-0 md:bottom-3 pt-2 right-[12%]">
         <li>
           <AiOutlineLinkedin className="fill-white h-5 w-5 md:h-7 md:w-7" />
         </li>
@@ -45,7 +45,7 @@ export const Footer = () => {
         </li>
       </ul>
 
-       <p className="absolute bottom-5 md:bottom-4 text-white pt-2 text-xs md:text-md left-[12%]">Copyright © 2024 Crio. All rights reserved.</p>
+       <p className="absolute bottom-5 md:bottom-4 text-white text-xs md:text-md left-[12%]">Copyright © 2024 Crio. All rights reserved.</p>
     </div>
   );
 };
