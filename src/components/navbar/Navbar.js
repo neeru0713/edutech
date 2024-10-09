@@ -1,8 +1,9 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { RxAvatar } from "react-icons/rx";
 
-const Navbar = () => {
+const Navbar = ({ user }) => {
   return (
     <nav className="nav w-[100%]">
       <ul className="mx-[16%] pt-8 flex flex-col md:flex-row justify-between items-center gap-5">
@@ -16,16 +17,25 @@ const Navbar = () => {
           <li>Courses</li>
           <li>Contact sections</li>
         </div>
-        <div className="btn flex flex-col md:flex-row text-left items-center gap-5 w-[30%] md:w-full">
-        <Link to="/login" className="cursor-pointer">
-          <button className="border rounded-md px-4 py-2 font-semibold hover:bg-[#f7f7fc] w-[5rem]">
-            Log in
-          </button>
-          </Link>
-          <button className="border rounded-md px-4 py-2 font-semibold bg-[#5845ee] text-white hover:bg-[#382ca5] w-[rem]">
-            Register
-          </button>
-        </div>
+        {user?.name ? (
+          <div className="flex gap-2 items-center">
+            <RxAvatar className="h-8 w-8" />
+            <Link to="/dashboard">
+              <p className="text-lg">{user?.name.split(" ")[0]}</p>
+            </Link>
+          </div>
+        ) : (
+          <div className="btn flex flex-col md:flex-row text-left items-center gap-5 w-[30%] md:w-full">
+            <Link to="/login" className="cursor-pointer">
+              <button className="border rounded-md px-4 py-2 font-semibold hover:bg-[#f7f7fc] w-[5rem]">
+                Log in
+              </button>
+            </Link>
+            <button className="border rounded-md px-4 py-2 font-semibold bg-[#5845ee] text-white hover:bg-[#382ca5] w-[rem]">
+              Register
+            </button>
+          </div>
+        )}
       </ul>
     </nav>
   );

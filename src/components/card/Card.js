@@ -8,7 +8,7 @@ const Card = ({ title, heading, content, image, themeColor }) => {
     <div className="flex flex-col bg-[#f8f7ff] gap-4 p-8 rounded-lg w-full md:w-[40%]">
       <h1
         style={style}
-        className="border rounded-xl py-2 font-semibold text-sm text-white"
+        className="border rounded-xl py-2 font-semibold text-sm text-white text-center"
       >
         {title}
       </h1>
