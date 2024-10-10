@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <GoogleOAuthProvider clientId="421657451619-b7jg42ulgm8ff21si2b4g89sb29e2kbq.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
       <Router>
         <div className="App">
           <Routes>
