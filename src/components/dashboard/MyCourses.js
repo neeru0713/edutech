@@ -46,7 +46,7 @@ const MyCourses = () => {
   return (
     <>
      <h1 className="p-2 font-bold text-xl">My Courses</h1>
-     <div className="overflow-scroll h-[89vh] grid grid-cols-2 gap-5 pr-4">
+     <div className="overflow-scroll h-[75vh] md:h-[89vh] grid grid-cols-1 md:grid-cols-2 gap-5 pr-4">
       {courses.map((course) => (
         <div key={course.courseId} className="course-item p-4 border gap-2 rounded-md mb-4 shadow shadow-lg flex flex-col">
           {editingCourse === course.courseId ? (
