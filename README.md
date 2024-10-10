@@ -22,8 +22,8 @@ Follow these instructions to get the application up and running on your local ma
 
 
 ```bash
-git clone https://github.com/yourusername/edutech-plus.git
-cd edutech-plus
+git clone https://github.com/yourusername/edutech.git
+cd edutech
 
 npm install
 
