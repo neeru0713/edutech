@@ -14,7 +14,7 @@ const HeroSection = () => {
         educators using EduTech+ to enhance learning experiences, track
         progress, and achieve goals with ease.
       </p>
-      <button className="border rounded-md px-4 py-2 font-semibold bg-[#5845ee] text-white hover:bg-[#382ca5] m-auto w-[12rem]">
+      <button className="border rounded-md px-4 py-2 font-semibold bg-[#5845ee] text-white hover:bg-[#382ca5] m-auto w-[12rem] shadow shadow-lg">
         Get started for free
       </button>
     </div>
